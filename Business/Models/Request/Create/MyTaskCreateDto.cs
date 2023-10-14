@@ -19,7 +19,7 @@ namespace Business.Models.Request.Create
         public MyTaskStatus MyTask_Status { get; set; } = default!;
 
         // Görevin atanmış olduğu kullanıcının kimlik bilgisini temsil eden özellik
-        public int User_Id { get; set; } = default!;
+        public int UserId { get; set; } = default!;
 
         // Aşağıdaki satırın yorum satırından çıkarılması durumunda, 
         // MyTaskCreateDto nesnesinin içinde bir User nesnesi de barındırılabilir.
