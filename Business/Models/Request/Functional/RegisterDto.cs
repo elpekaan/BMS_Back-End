@@ -1,4 +1,6 @@
 ﻿// Business katmanındaki Functional talepleri için kullanılacak DTO (Data Transfer Object) sınıfını oluşturuyoruz.
+using Infrastructure.Data.Postgres.Entities;
+
 namespace Business.Models.Request.Functional
 {
     // Kayıt işlemi için kullanılacak DTO sınıfı
@@ -21,5 +23,8 @@ namespace Business.Models.Request.Functional
 
         // Şifreyi temsil eden özellik
         public string Password { get; set; } = default!;
+
+        // Kullanıcının tipini temsil eden özellik
+        public UserType UserType { get; set; }
     }
 }

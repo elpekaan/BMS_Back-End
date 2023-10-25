@@ -29,7 +29,6 @@ public class AuthController : BaseController
 
     // Kullanıcının profil bilgilerini getiren HTTP Get metodu
     [HttpGet]
-    [Authorize] // Yetkilendirme filtresi kullanılarak sadece yetkilendirilmiş kullanıcıların erişimine izin verilir
     public async Task<ActionResult<DataResult<UserProfileDto>>> GetProfileInfo()
         => await _authService.GetUserProfileInfo();
 

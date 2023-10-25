@@ -1,5 +1,4 @@
-﻿// Business katmanındaki Update talepleri için kullanılacak DTO (Data Transfer Object) sınıfını oluşturuyoruz.
-using Infrastructure.Data.Postgres.Entities;  // Kullanıcının tipini temsil eden UserType enumunu kullanmak için gerekli isim alanı
+﻿using Infrastructure.Data.Postgres.Entities;  // Kullanıcının tipini temsil eden UserType enumunu kullanmak için gerekli isim alanı
 
 namespace Business.Models.Request.Update
 {
